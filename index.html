@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<html>
+<head>
+
+	<title>Pizzaria JG</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>  
+
+	<div id="header" title="sitename">  		
+		<div style="color: white"><center>Número de pedidos para Delivery: Telefone (33) 3333-3333 / Whatsapp (99) 9.9999-9999</center></div>
+	</div>
+
+	<nav class="links">
+		<!--<label for="rd_home">Início</label><label for="rd_home" style="float: left"><img src="logo1.png" height="76px" id="logo"></label>-->
+		<label for="rd_menu">Cardápio</label>
+		<label for="rd_history">História</label>
+		<label for="rd_home"><img src="logo1.png" height="60vh"></label>
+		<label for="rd_services">Serviços</label>
+		<label for="rd_contacts">Contatos</label>
+	</nav>
+
+	<div class="scroll">
+		<input class="esconder" type="radio" name="grupo" id="rd_home" checked="true">
+		<input class="esconder" type="radio" name="grupo" id="rd_history">
+		<input class="esconder" type="radio" name="grupo" id="rd_menu">
+		<input class="esconder" type="radio" name="grupo" id="rd_services">
+		<input class="esconder" type="radio" name="grupo" id="rd_contacts">
+
+		<section class="sections">
+			<section class="bloco" id="home">
+				<section class="galeria">
+					<img class="foto" src="pizza calabresa.jpg">
+					<img class="foto" src="pizza portuguesa.jpg">
+					<img class="foto" src="pizza salame.jpg">
+					<img class="foto" src="pizza morango.jpg">
+				</section>
+			<a href="#rd_menu" class="botaoHomeCard">Cardápio</a>	
+			<a href="#rd_contacts" class="botaoHomeCont">Contate-nos</a>
+
+			</section>
+
+			<section class="bloco" id="history">
+				<p class="historia"><img src="pizzaria.jpg"><br><br><font size="35pt" class="txthistoria"><i>História</i></font><br><br><font class="txthistoriainf">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</font></p>
+			</section>
+
+			<section class="bloco" id="menu"><img src="cardapio.jpg" class="cardapio" height="580px" width="1368px"></section>
+
+			<section class="bloco" id="services">
+				<div class="servicos">
+					<img src="reservas.jpg" width="350px" height="220px"/>
+
+					<span><br><center><font size="35pt" face="Bradley Hand ITC" color="white"><b>Reserve</b></font>
+					<br><br><font color="white" size="4px">Faça sua reserva para eventos* **</font>
+					<br><br><font color="white" size="1px">
+					*Reservas com antecedencias minima de 2 horas (12:00 as 17:00)<br>
+					**Horarios de movimento ligar com no minimo 3 horas <br> de antecedencia (17:30 as 00:00)</center></font>
+					</span>
+				</div>
+
+				<div class="servicos">
+					<img src="buffet.jpg" width="350px" height="220px"/>
+
+					<span class="box"><br><center><font size="35pt" face="Bradley Hand ITC" color="white"><b>Buffet</b><br></font>
+					<br><br><font color="white" size="4px">Peça seu buffet para eventos* **</font><br><font color="white" size="1px">
+						*Ligar com um mês de antecedencia <br>
+					**Pedidos com prazos menos que duas <br> semanas, pagam taxa de urgencia</center></font></span>
+				</div>
+
+
+				<div class="servicos">
+					<img src="entrega.jpg" width="350px" height="220px">
+
+					<span><br><center><font size="35pt" face="Bradley Hand ITC" color="white"><b>Delivery</b></font>
+					<br><br><font color="white" size="4px">Sua pizza entregue em 30 minutos,<br> ou metade do seu dinheiro de volta*</font><br><font color="white" size="1px">
+					*Adcional de 20 minutos em dias chuvosos <br>
+					**Tempo de entrega somente no raio de 10km da pizzaria </font></center></span>
+				</div>
+				
+				<a href="#rd_contacts" class="botaoSer">Contate-nos</a>
+
+			</section>
+			
+		<div id="cont">	
+			<section class="bloco" id="contacts">
+
+				
+				<form id="formulario" autocomplete="off" style="float: left;"><br><p>Seu feedback é muito importante:</p><br>
+				
+					<input type="txt" placeholder="Nome" class="campo_nome" required><br><br>
+					<input type="txt" placeholder="E-mail" class="campo_email" required><br><br>
+					<select required>
+						<option value="Elogio">Elogio</option>
+						<option value="Sugestão">Sugestão</option>
+						<option value="Reclamação">Reclamação</option>
+					</select><br><br>
+					<textarea placeholder="Deixe seu comentario aqui..." required></textarea><br><br>
+					<input class="btenviar" type="submit"  value="Enviar">
+				</form>
+			<p id="map"> <img src="https://png.icons8.com/windows/50/ffffff/phone.png">Telefone: (33) 3333-3333 <br>
+			<img src="https://png.icons8.com/windows/50/ffffff/whatsapp.png"> Whatsapp: (99) 9.9999-9999 <br>
+			<img src="https://png.icons8.com/windows/50/ffffff/new-post.png"> contato@pizzaria.com.br <br><br>
+			<img src="https://png.icons8.com/windows/50/ffffff/google-maps.png">Rio Vermelho, Salvador - BA <br>
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.3710065007817!2d-38.49099998517756!3d-13.012029890829373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7160353b809e8cf%3A0x2ef98829ef676044!2sUNIFACS+-+Campus+Rio+Vermelho+PA6!5e0!3m2!1spt-BR!2sbr!4v1537945032596" height="200" width="450"></iframe>
+			</p>
+
+				<div id="footer"><center>Desenvolvido por Caio Rios. Todos os direitos reservados.</center></div>
+			</section></div>
+		</section>
+
+	
+</body>  
+</html>

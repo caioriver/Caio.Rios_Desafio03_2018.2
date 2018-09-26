@@ -1,0 +1,342 @@
+*{  margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+
+#header {
+    background-color: #4e0707;
+    position: center;
+   
+}
+
+/*NAVBAR*/
+
+.links{
+    width: 100vw;
+    height: 12vh;
+    position: fixed;
+    display: flex;
+    z-index: 9999;
+    background-image: url(painel-madeira.jpg);
+    background-size: 100vw;
+    
+}
+
+.links label{
+   
+    flex-grow: 1;
+    cursor: pointer;
+    transition: all .4s;
+    text-align: center;
+    font-family: 'algerian';
+    font-size: 167%;
+    font-weight: bold;
+    color: green;
+    padding: 1% 1%;
+    z-index: 999;
+}
+
+.links label:hover{
+   /* background-color: #b51c28; */
+   color: #b51c28;
+
+}
+
+.scroll input.esconder{
+    display: none;
+}
+
+/*CONFIGURACÃO DA PAGINA*/
+
+.bloco {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#home{
+    background-image: url(madeira.jpg);
+    position: relative;
+    z-index:-3;
+
+}
+
+#history{
+    background-image: url(madeira.jpg);
+}
+
+#menu{
+    background-image: url(madeira.jpg);
+}
+
+#services{
+    background-image: url(pizza-wallpaper.jpg);
+    margin: 0 auto;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+
+}
+
+#contacts{
+    background-image: url(pizza-wallpaper.jpg);
+    margin: 0 auto;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.scroll{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    }
+
+/*NAVEGAÇÃO*/
+
+.sections{
+    transition: all .6s;
+}
+
+
+#rd_history:checked ~ .sections{
+    margin-top: -100vh;
+    transition: #b51c28;
+}
+
+#rd_menu:checked ~ .sections{
+    margin-top: -200vh;
+}
+
+#rd_services:checked ~ .sections{
+    margin-top: -300vh;
+}
+
+#rd_contacts:checked ~ .sections{
+    margin-top: -400vh;
+}
+
+/* INICIO */
+
+.galeria{
+    margin-top: 5vh;
+    width: 100vw;
+    height: 90vh;
+    position: fixed;
+    
+    z-index: -2;
+}
+
+.foto{
+    width: 100vw;
+    height: 90vh;
+    position: absolute;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+ 
+    z-index: 1;
+}
+
+@keyframes animacao{
+
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+.foto:nth-child(1){
+    
+}
+.foto:nth-child(2){
+    animation-delay: 10s;
+}
+.foto:nth-child(3){
+    animation-delay: 20s;
+}
+.foto:nth-child(4){
+    animation-delay: 30s;
+}
+
+/* HISTORIA */
+
+.historia img {
+    height: 68vh;
+    width: 47vw;
+    padding-left: 1vw;
+    float: left;
+ }
+
+
+.txthistoria {
+    font-size: 2.3em;
+    color: #fff;
+    padding: 250px;
+}
+
+.txthistoriainf {
+    font-size: 1.3em;
+    color: #fff;
+    text-align: justify;
+    padding-left: 10px;
+}
+
+/* CARDAPIO */
+
+.cardapio {
+    margin-top: 12vh;
+   
+
+}
+
+/* SERVIÇOS */
+
+div.servicos {
+    margin-left: 150px;
+    display: inline-block;
+}
+
+/* FORMULARIO */
+
+
+#formulario{
+    padding: 100px 100px 50px 50px;
+
+}
+
+#formulario p{
+    font-family: 'algerian';
+    color: white;
+    font-size: 18pt;
+    text-align: center;
+} 
+ 
+#formulario input.campo_nome {
+    font-family: 'algerian';
+    width:425px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+#formulario input.campo_email {
+    font-family: 'algerian';
+    width:425px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+#formulario select {
+    font-family: 'algerian';
+    width: 427px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+#formulario textarea {
+    font-family: 'algerian';
+    width: 427px;
+    height: 165px;
+    border-radius: 5px;
+}
+
+#formulario input.btenviar {
+    background-color: #b51c28;
+    color: white;
+    font-size: 15pt;
+    font-family: 'algerian';
+    border-radius: 5px;
+    width: 106px;
+    height: 40px;
+}
+
+
+/* RODA PÉ */
+
+#footer {
+    margin-top: 46vh;
+    width: 100vw;
+    height: 4vh;    
+    font-weight: bold;
+    font-size: 12pt;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    background-image: url(painel-madeira.jpg);
+    background-size: 100vw;
+    position: absolute;
+    z-index: 999;
+}
+
+/* BOTÕES */
+
+.botaoSer {
+    background-color: #b51c28;
+    text-indent: 0;
+    color: white;
+    font-family: 'algerian';
+    font-size: 15pt;
+    height: 50px;
+    line-height: 50px;
+    width: 200px;
+    text-decoration:none;
+    text-align:center;
+    border-radius: 5px;
+    position: sticky;
+    top: 590px;
+    right: 613px;
+    z-index: 99;
+}
+
+.botaoHomeCont {
+    background-color: #b51c28;
+    text-indent: 0;
+    color: white;
+    font-family: 'algerian';
+    font-size: 11pt;
+    height: 40px;
+    line-height: 40px;
+    width: 100px;
+    text-decoration:none;
+    text-align:center;
+    border-radius: 5px;
+    position: absolute;
+    top: 590px;
+    right: 70px;
+    z-index: -1;
+}
+
+.botaoHomeCard {
+    background-color: #31802f;
+    text-indent: 0;
+    color: white;
+    font-family: 'algerian';
+    font-size: 14pt;
+    height: 40px;
+    line-height: 40px;
+    width: 100px;
+    text-decoration:none;
+    text-align:center;
+    border-radius: 5px;
+    position: absolute;
+    top: 530px;
+    right: 70px;
+    z-index: -1;
+}
+
+/* Contatos e mapa */
+
+#map {
+    font-family: Bradley Hand ITC;
+    color: white;
+    font-size: 15pt;
+    justify-content: center;
+    font-weight: bold;
+    padding-left: 50px;
+}
